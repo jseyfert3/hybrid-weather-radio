@@ -13,9 +13,12 @@ You should have received a copy of the GNU General Public License along with hyb
 */
 
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <curl/curl.h>
+#include "libraries/nlohmann/json.hpp"
 
+using json = nlohmann::json;
 
 static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *userp)
 {
@@ -30,14 +33,21 @@ int main(void)
 
   if(curl) {
 	CURLcode res;
-	curl_easy_setopt(curl, CURLOPT_URL, "https://api.weather.gov/alerts/active?area=OH");
+	curl_easy_setopt(curl, CURLOPT_URL, "https://api.weather.gov/alerts/active?area=OK");
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
 	curl_easy_setopt(curl, CURLOPT_USERAGENT, "jseyfert3@gmail.com"); 
 	res = curl_easy_perform(curl); //if 0, ok. Non-zero means error occured.
     curl_easy_cleanup(curl);
 
-    std::cout << readBuffer << std::endl;
-  }
+//	std::cout << readBuffer << std::endl;
+	std::cout << "Creating file" << std::endl;
+	std::ofstream file("alerts.json");
+	file << readBuffer;;
+	json data = json::parse(readBuffer);
+	std::cout << "Number of alerts: ";
+	std::cout << data["features"].size() << std::endl;
+	file.close();
+	}
   return 0;
 } 

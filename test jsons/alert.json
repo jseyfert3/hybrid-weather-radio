@@ -1,0 +1,409 @@
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "@vocab": "https://api.weather.gov/ontology#"
+        }
+    ],
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7c62be36173e82b74e959820e2cfe955881e94d.002.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -83.31,
+                            39.12
+                        ],
+                        [
+                            -83.35000000000001,
+                            39.22
+                        ],
+                        [
+                            -83.34,
+                            39.229999899999996
+                        ],
+                        [
+                            -83.35000000000001,
+                            39.229999899999996
+                        ],
+                        [
+                            -83.35000000000001,
+                            39.24999999999999
+                        ],
+                        [
+                            -83.36000000000001,
+                            39.24999999999999
+                        ],
+                        [
+                            -83.39000000000001,
+                            39.31999999999999
+                        ],
+                        [
+                            -83.38000000000001,
+                            39.32999999999999
+                        ],
+                        [
+                            -83.08000000000001,
+                            39.44999999999999
+                        ],
+                        [
+                            -82.97000000000001,
+                            39.18999999999999
+                        ],
+                        [
+                            -83.31,
+                            39.12
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b7c62be36173e82b74e959820e2cfe955881e94d.002.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.b7c62be36173e82b74e959820e2cfe955881e94d.002.1",
+                "areaDesc": "Pike, OH; Ross, OH",
+                "geocode": {
+                    "SAME": [
+                        "039131",
+                        "039141"
+                    ],
+                    "UGC": [
+                        "OHC131",
+                        "OHC141"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/OHC131",
+                    "https://api.weather.gov/zones/county/OHC141"
+                ],
+                "references": [
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4f469889a16b39e82dc239718976bbbae42772d1.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.4f469889a16b39e82dc239718976bbbae42772d1.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2025-04-19T17:21:00-04:00"
+                    },
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.99e006e14345dd1bf203527abddf64afeb32cc16.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.99e006e14345dd1bf203527abddf64afeb32cc16.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2025-04-19T17:30:00-04:00"
+                    }
+                ],
+                "sent": "2025-04-19T17:44:00-04:00",
+                "effective": "2025-04-19T17:44:00-04:00",
+                "onset": "2025-04-19T17:44:00-04:00",
+                "expires": "2025-04-19T18:00:00-04:00",
+                "ends": "2025-04-19T18:00:00-04:00",
+                "status": "Actual",
+                "messageType": "Update",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Wilmington OH",
+                "headline": "Severe Thunderstorm Warning issued April 19 at 5:44PM EDT until April 19 at 6:00PM EDT by NWS Wilmington OH",
+                "description": "At 542 PM EDT, a severe thunderstorm was located over Bainbridge,\nmoving east at 50 mph.\n\nHAZARD...60 mph wind gusts and half dollar size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Minor hail damage to vehicles is possible. Expect wind\ndamage to trees and power lines.\n\nLocations impacted include...\nSummithill, Bourneville, Knockemstiff, Bainbridge, Lattaville, South\nSalem, Frankfort, and Chillicothe.",
+                "instruction": "For your protection move to an interior room on the lowest floor of a\nbuilding.\n\nTo report severe weather, go to our website at weather.gov/iln and\nsubmit your report via social media, when you can do so safely.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVSILN"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS51 KILN 192144"
+                    ],
+                    "NWSheadline": [
+                        "A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 600 PM EDT FOR NORTHWESTERN PIKE AND WESTERN ROSS COUNTIES"
+                    ],
+                    "eventMotionDescription": [
+                        "2025-04-19T21:42:00-00:00...storm...250DEG...44KT...39.24,-83.29"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "60 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "1.25"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.CON.KILN.SV.W.0069.000000T0000Z-250419T2200Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2025-04-19T22:00:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eb8fabb8613b1a2010101abf67b5384d83bba44b.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -82.77,
+                            39.17
+                        ],
+                        [
+                            -82.78,
+                            39.17
+                        ],
+                        [
+                            -82.8,
+                            39.010000000000005
+                        ],
+                        [
+                            -83.63,
+                            38.89000000000001
+                        ],
+                        [
+                            -83.69,
+                            39.10000000000001
+                        ],
+                        [
+                            -82.75999999999999,
+                            39.290000000000006
+                        ],
+                        [
+                            -82.77,
+                            39.17
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eb8fabb8613b1a2010101abf67b5384d83bba44b.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.eb8fabb8613b1a2010101abf67b5384d83bba44b.001.1",
+                "areaDesc": "Adams, OH; Highland, OH; Pike, OH; Ross, OH; Scioto, OH",
+                "geocode": {
+                    "SAME": [
+                        "039001",
+                        "039071",
+                        "039131",
+                        "039141",
+                        "039145"
+                    ],
+                    "UGC": [
+                        "OHC001",
+                        "OHC071",
+                        "OHC131",
+                        "OHC141",
+                        "OHC145"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/OHC001",
+                    "https://api.weather.gov/zones/county/OHC071",
+                    "https://api.weather.gov/zones/county/OHC131",
+                    "https://api.weather.gov/zones/county/OHC141",
+                    "https://api.weather.gov/zones/county/OHC145"
+                ],
+                "references": [],
+                "sent": "2025-04-19T17:35:00-04:00",
+                "effective": "2025-04-19T17:35:00-04:00",
+                "onset": "2025-04-19T17:35:00-04:00",
+                "expires": "2025-04-19T18:15:00-04:00",
+                "ends": "2025-04-19T18:15:00-04:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Wilmington OH",
+                "headline": "Severe Thunderstorm Warning issued April 19 at 5:35PM EDT until April 19 at 6:15PM EDT by NWS Wilmington OH",
+                "description": "SVRILN\n\nThe National Weather Service in Wilmington has issued a\n\n* Severe Thunderstorm Warning for...\nNorthern Adams County in south central Ohio...\nPike County in south central Ohio...\nSoutheastern Highland County in south central Ohio...\nNorthwestern Scioto County in south central Ohio...\nSoutheastern Ross County in south central Ohio...\n\n* Until 615 PM EDT.\n\n* At 535 PM EDT, a severe thunderstorm was located over Belfast,\nmoving east at 60 mph.\n\nHAZARD...Ping pong ball size hail and 60 mph wind gusts.\n\nSOURCE...Radar indicated.\n\nIMPACT...People and animals outdoors will be injured. Expect hail\ndamage to roofs, siding, windows, and vehicles. Expect\nwind damage to trees and power lines.\n\n* Locations impacted include...\nPike County Airport, Pike Lake, May Hill, Kincaid Springs, Omega,\nLocust Grove, Givens, Belfast, Seaman, Emerald, Beaver, Lake White,\nPoplar Grove, Peebles, Sinking Spring, Elm Grove, Serpent Mound,\nBuchanan, Summithill, and Ladd.",
+                "instruction": "For your protection move to an interior room on the lowest floor of a\nbuilding.\n\nTo report severe weather, go to our website at weather.gov/iln and\nsubmit your report via social media, when you can do so safely.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVRILN"
+                    ],
+                    "WMOidentifier": [
+                        "WUUS51 KILN 192135"
+                    ],
+                    "eventMotionDescription": [
+                        "2025-04-19T21:35:00-00:00...storm...258DEG...53KT...39.04,-83.57"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "60 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "1.50"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KILN.SV.W.0070.250419T2135Z-250419T2215Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2025-04-19T22:15:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d783893a1e0d6a1adbd270c8953351837d300178.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -83.84,
+                            38.9099999
+                        ],
+                        [
+                            -83.89,
+                            39.080000000000005
+                        ],
+                        [
+                            -83.19,
+                            39.25000000000001
+                        ],
+                        [
+                            -83.12,
+                            39.02000000000001
+                        ],
+                        [
+                            -83.23,
+                            39.00000000000001
+                        ],
+                        [
+                            -83.24000000000001,
+                            39.010000000000005
+                        ],
+                        [
+                            -83.27000000000001,
+                            39.010000000000005
+                        ],
+                        [
+                            -83.27000000000001,
+                            39.00000000000001
+                        ],
+                        [
+                            -83.84,
+                            38.9099999
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d783893a1e0d6a1adbd270c8953351837d300178.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.d783893a1e0d6a1adbd270c8953351837d300178.001.1",
+                "areaDesc": "Ross; Brown; Highland; Adams; Pike",
+                "geocode": {
+                    "SAME": [
+                        "039141",
+                        "039015",
+                        "039071",
+                        "039001",
+                        "039131"
+                    ],
+                    "UGC": [
+                        "OHZ073",
+                        "OHZ079",
+                        "OHZ080",
+                        "OHZ081",
+                        "OHZ082"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/OHZ073",
+                    "https://api.weather.gov/zones/forecast/OHZ079",
+                    "https://api.weather.gov/zones/forecast/OHZ080",
+                    "https://api.weather.gov/zones/forecast/OHZ081",
+                    "https://api.weather.gov/zones/forecast/OHZ082"
+                ],
+                "references": [],
+                "sent": "2025-04-19T17:28:00-04:00",
+                "effective": "2025-04-19T17:28:00-04:00",
+                "onset": "2025-04-19T17:28:00-04:00",
+                "expires": "2025-04-19T18:00:00-04:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Wilmington OH",
+                "headline": "Special Weather Statement issued April 19 at 5:28PM EDT by NWS Wilmington OH",
+                "description": "At 527 PM EDT, a strong thunderstorm was located over Sardinia,\nmoving east at 55 mph.\n\nHAZARD...Wind gusts up to 45 mph and pea size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects. Hail may cause minor damage to\nvegetation.\n\nLocations impacted include...\nPoplar Grove, Sardinia, Pike Lake, Sinking Spring, Elm Grove, Lake\nWaynoka, Marshall, May Hill, Kincaid Springs, Buford, Locust Grove,\nSerpent Mound, Belfast, Mowrystown, Bainbridge, Cynthiana, Emerald,\nFincastle, State Route 32 at US Route 62, and Berrysville.\n\nIf outdoors, consider seeking shelter inside a sturdy building.\n\nTo report hazardous weather conditions, go to our website at\nweather.gov/iln and submit your report via social media, when you can\ndo so safely.",
+                "instruction": null,
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSILN"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS81 KILN 192128"
+                    ],
+                    "NWSheadline": [
+                        "A STRONG THUNDERSTORM WILL IMPACT PORTIONS OF EAST CENTRAL BROWN...NORTHERN ADAMS...WESTERN PIKE...SOUTHERN HIGHLAND AND SOUTHWESTERN ROSS COUNTIES THROUGH 600 PM EDT"
+                    ],
+                    "eventMotionDescription": [
+                        "2025-04-19T21:27:00-00:00...storm...256DEG...48KT...39.02,-83.77"
+                    ],
+                    "maxWindGust": [
+                        "45 MPH"
+                    ],
+                    "maxHailSize": [
+                        "0.25"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        }
+    ],
+    "title": "Current watches, warnings, and advisories for Ohio",
+    "updated": "2025-04-19T21:45:58+00:00"
+}
