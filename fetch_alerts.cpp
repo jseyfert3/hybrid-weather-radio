@@ -17,8 +17,10 @@ You should have received a copy of the GNU General Public License along with hyb
 #include <string>
 #include <curl/curl.h>
 #include "libraries/nlohmann/json.hpp"
+#include <chrono> // for date & time
 
 using json = nlohmann::json;
+std::string state = "OK";
 
 static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *userp)
 {
@@ -33,16 +35,25 @@ int main(void)
 
   if(curl) {
 	CURLcode res;
-	curl_easy_setopt(curl, CURLOPT_URL, "https://api.weather.gov/alerts/active?area=OK");
+    std::string stateUrl = "https://api.weather.gov/alerts/active?area=" + state;
+    curl_easy_setopt(curl, CURLOPT_URL, stateUrl.c_str());
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
 	curl_easy_setopt(curl, CURLOPT_USERAGENT, "jseyfert3@gmail.com"); 
 	res = curl_easy_perform(curl); //if 0, ok. Non-zero means error occured.
+    if(res != 0)
+    {
+        std::cout << "Error: curl error #" << res << "\n";
+        return 1;
+    }
     curl_easy_cleanup(curl);
 
-//	std::cout << readBuffer << std::endl;
-	std::cout << "Creating file" << std::endl;
-	std::ofstream file("alerts.json");
+    auto now = std::chrono::system_clock::now(); // get current time and date
+    std::chrono::zoned_time localTime{"America/Chicago", now}; // if wrong timezone, will throw error. Consider try/catch https://en.cppreference.com/w/cpp/chrono/time_zone/to_local
+    std::string datetime = std::format("{0:%F_%T%z}_", localTime); // formate into a string https://en.cppreference.com/w/cpp/chrono/system_clock/formatter
+    
+    std::string filename = datetime + state + "_alerts.json";
+	std::ofstream file(filename);
 	file << readBuffer;;
 	json data = json::parse(readBuffer);
 	std::cout << "Number of alerts: ";
