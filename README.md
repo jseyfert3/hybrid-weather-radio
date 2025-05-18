@@ -140,5 +140,5 @@ The general idea, therefore, is to combine the reliability of the weather radio 
 
 ## Building
 ```
-g++ -std=c++20 fetch_alerts.cpp -o fetch_alerts -lcurl
+g++ -std=c++20 main.cpp fetchAlerts.cpp -o hybrid_weather_radio -lcurl
 ```
