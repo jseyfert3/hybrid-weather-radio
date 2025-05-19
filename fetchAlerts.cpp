@@ -1,3 +1,17 @@
+/*
+Copyright 2025 Jonathan Seyfert
+
+This file is part of hybrid-weather-radio.
+
+hybrid-weather-radio is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+hybrid-weather-radio is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty
+of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with hybrid-weather-radio. If not, see <https://www.gnu.org/licenses/>. 
+*/
+
 #include <iostream>
 #include <string>
 #include <curl/curl.h>
@@ -21,7 +35,7 @@ std::string fetchAlerts(std::string state)
         curl_easy_setopt(curl, CURLOPT_URL, stateUrl.c_str());
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
-        curl_easy_setopt(curl, CURLOPT_USERAGENT, "jseyfert3@gmail.com"); 
+        curl_easy_setopt(curl, CURLOPT_USERAGENT, "https://github.com/jseyfert3/hybrid-weather-radio"); 
         res = curl_easy_perform(curl); //if 0, ok. Non-zero means error occured.
         if(res != CURLE_OK)
         {
