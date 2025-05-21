@@ -1,0 +1,440 @@
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "@vocab": "https://api.weather.gov/ontology#"
+        }
+    ],
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4f655c5742bd1341c0f7c7fd319263698193cb1e.002.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -95.61,
+                            36.2
+                        ],
+                        [
+                            -95.67,
+                            36.32
+                        ],
+                        [
+                            -95.4599999,
+                            36.44
+                        ],
+                        [
+                            -95.35,
+                            36.22
+                        ],
+                        [
+                            -95.61,
+                            36.2
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4f655c5742bd1341c0f7c7fd319263698193cb1e.002.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.4f655c5742bd1341c0f7c7fd319263698193cb1e.002.1",
+                "areaDesc": "Mayes, OK; Rogers, OK",
+                "geocode": {
+                    "SAME": [
+                        "040097",
+                        "040131"
+                    ],
+                    "UGC": [
+                        "OKC097",
+                        "OKC131"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/OKC097",
+                    "https://api.weather.gov/zones/county/OKC131"
+                ],
+                "references": [
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.39c9861824cc1fc0cc82f184a755744fbbcc05ac.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.39c9861824cc1fc0cc82f184a755744fbbcc05ac.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2025-05-18T13:05:00-05:00"
+                    },
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fe7abcedc67d9dc0060ecdba798f198b09317dc.002.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.1fe7abcedc67d9dc0060ecdba798f198b09317dc.002.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2025-05-18T13:17:00-05:00"
+                    }
+                ],
+                "sent": "2025-05-18T13:35:00-05:00",
+                "effective": "2025-05-18T13:35:00-05:00",
+                "onset": "2025-05-18T13:35:00-05:00",
+                "expires": "2025-05-18T13:45:00-05:00",
+                "ends": "2025-05-18T13:45:00-05:00",
+                "status": "Actual",
+                "messageType": "Update",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Tulsa OK",
+                "headline": "Severe Thunderstorm Warning issued May 18 at 1:35PM CDT until May 18 at 1:45PM CDT by NWS Tulsa OK",
+                "description": "At 134 PM CDT, a severe thunderstorm was located over Tiawah, moving\nnortheast at 25 mph.\n\nHAZARD...Half dollar size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Damage to vehicles is expected.\n\nLocations in or near the path include...\nTiawah...                         Claremore...\n\nThis includes Interstate 44 between mile markers 246 and 260.",
+                "instruction": "For your protection move to an interior room on the lowest floor of a\nbuilding.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVSTSA"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS54 KTSA 181835"
+                    ],
+                    "NWSheadline": [
+                        "A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 145 PM CDT FOR CENTRAL ROGERS AND WEST CENTRAL MAYES COUNTIES"
+                    ],
+                    "eventMotionDescription": [
+                        "2025-05-18T18:34:00-00:00...storm...245DEG...21KT...36.27,-95.55"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "Up to 50 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "1.25"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.CON.KTSA.SV.W.0203.000000T0000Z-250518T1845Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2025-05-18T18:45:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f348790638836bc18d73e360b275372008c2a22.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -95.7,
+                            36.88
+                        ],
+                        [
+                            -95.4599999,
+                            36.580000000000005
+                        ],
+                        [
+                            -95.85,
+                            36.42000000000001
+                        ],
+                        [
+                            -96,
+                            36.42000000000001
+                        ],
+                        [
+                            -96,
+                            36.36000000000001
+                        ],
+                        [
+                            -96.01,
+                            36.36000000000001
+                        ],
+                        [
+                            -96.18,
+                            36.580000000000005
+                        ],
+                        [
+                            -95.7,
+                            36.88
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f348790638836bc18d73e360b275372008c2a22.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.7f348790638836bc18d73e360b275372008c2a22.001.1",
+                "areaDesc": "Nowata, OK; Osage, OK; Rogers, OK; Washington, OK",
+                "geocode": {
+                    "SAME": [
+                        "040105",
+                        "040113",
+                        "040131",
+                        "040147"
+                    ],
+                    "UGC": [
+                        "OKC105",
+                        "OKC113",
+                        "OKC131",
+                        "OKC147"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/county/OKC105",
+                    "https://api.weather.gov/zones/county/OKC113",
+                    "https://api.weather.gov/zones/county/OKC131",
+                    "https://api.weather.gov/zones/county/OKC147"
+                ],
+                "references": [],
+                "sent": "2025-05-18T13:31:00-05:00",
+                "effective": "2025-05-18T13:31:00-05:00",
+                "onset": "2025-05-18T13:31:00-05:00",
+                "expires": "2025-05-18T14:15:00-05:00",
+                "ends": "2025-05-18T14:15:00-05:00",
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Severe",
+                "certainty": "Observed",
+                "urgency": "Immediate",
+                "event": "Severe Thunderstorm Warning",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Tulsa OK",
+                "headline": "Severe Thunderstorm Warning issued May 18 at 1:31PM CDT until May 18 at 2:15PM CDT by NWS Tulsa OK",
+                "description": "SVRTSA\n\nThe National Weather Service in Tulsa has issued a\n\n* Severe Thunderstorm Warning for...\nNorthwestern Rogers County in northeastern Oklahoma...\nEast central Osage County in northeastern Oklahoma...\nSouthern Washington County in northeastern Oklahoma...\nSouthwestern Nowata County in northeastern Oklahoma...\n\n* Until 215 PM CDT.\n\n* At 130 PM CDT, a severe thunderstorm was located 3 miles east of\nAvant, moving northeast at 30 mph.\n\nHAZARD...60 mph wind gusts and quarter size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Hail damage to vehicles is expected. Expect wind damage\nto roofs, siding, and trees.\n\n* Locations in or near the path include...\nBarnsdall...                      New Alluwe...\nDelaware...                       Ochelata...\nWatova...                         Ramona...\nNowata...                         Vera...\nTalala...                         Avant...\nWolco...                          Bartlesville...\nSkiatook...",
+                "instruction": "For your protection move to an interior room on the lowest floor of a\nbuilding.",
+                "response": "Shelter",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SVRTSA"
+                    ],
+                    "WMOidentifier": [
+                        "WUUS54 KTSA 181831"
+                    ],
+                    "eventMotionDescription": [
+                        "2025-05-18T18:30:00-00:00...storm...240DEG...25KT...36.5,-95.99"
+                    ],
+                    "windThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxWindGust": [
+                        "60 MPH"
+                    ],
+                    "hailThreat": [
+                        "RADAR INDICATED"
+                    ],
+                    "maxHailSize": [
+                        "1.00"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ],
+                    "VTEC": [
+                        "/O.NEW.KTSA.SV.W.0205.250518T1831Z-250518T1915Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2025-05-18T19:15:00+00:00"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8d9f6384f3c28eca441b210c8049aea021ec2963.001.1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -94.5,
+                            35.82
+                        ],
+                        [
+                            -94.65,
+                            35.95
+                        ],
+                        [
+                            -94.11,
+                            36.5
+                        ],
+                        [
+                            -93.36,
+                            36.49
+                        ],
+                        [
+                            -94.5,
+                            35.82
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8d9f6384f3c28eca441b210c8049aea021ec2963.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.8d9f6384f3c28eca441b210c8049aea021ec2963.001.1",
+                "areaDesc": "Benton; Carroll; Washington; Madison; Adair",
+                "geocode": {
+                    "SAME": [
+                        "005007",
+                        "005015",
+                        "005143",
+                        "005087",
+                        "040001"
+                    ],
+                    "UGC": [
+                        "ARZ001",
+                        "ARZ002",
+                        "ARZ010",
+                        "ARZ011",
+                        "OKZ069"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/ARZ001",
+                    "https://api.weather.gov/zones/forecast/ARZ002",
+                    "https://api.weather.gov/zones/forecast/ARZ010",
+                    "https://api.weather.gov/zones/forecast/ARZ011",
+                    "https://api.weather.gov/zones/forecast/OKZ069"
+                ],
+                "references": [],
+                "sent": "2025-05-18T13:29:00-05:00",
+                "effective": "2025-05-18T13:29:00-05:00",
+                "onset": "2025-05-18T13:29:00-05:00",
+                "expires": "2025-05-18T14:15:00-05:00",
+                "ends": null,
+                "status": "Actual",
+                "messageType": "Alert",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Observed",
+                "urgency": "Expected",
+                "event": "Special Weather Statement",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Tulsa OK",
+                "headline": "Special Weather Statement issued May 18 at 1:29PM CDT by NWS Tulsa OK",
+                "description": "At 128 PM CDT, Doppler radar indicated a strong thunderstorm 4 miles\nsoutheast of Westville, moving northeast at 40 mph. Another strong\nthunderstorm was located near Walnut Hill, moving northeast at 40\nmph.\n\nHAZARD...Nickel size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Minor hail damage to vegetation is possible.\n\nLocations in or near the path include...\nNorthwest Arkansas Regional Air...Beaver Lake...\nCincinnati...                     Savoy...\nTontitown...                      Larue...\nPea Ridge...                      Cave Springs...\nWedington...                      Pleasant Ridge...\nHobbs State Park...               Best...\nLincoln...                        Clifty...\nBusch...                          War Eagle...\nHighfill...                       Monte Ne...\nHealing Springs...                Farmington...\n\nThis includes Interstate 49 between mile markers 58 and 90.",
+                "instruction": "If outdoors, consider seeking shelter inside a building.",
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "SPSTSA"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS84 KTSA 181829"
+                    ],
+                    "NWSheadline": [
+                        "A STRONG THUNDERSTORM WILL IMPACT EASTERN BENTON...NORTHWESTERN MADISON...NORTHWESTERN CARROLL...CENTRAL WASHINGTON AND NORTHEASTERN ADAIR COUNTIES THROUGH 215 PM CDT"
+                    ],
+                    "eventMotionDescription": [
+                        "2025-05-18T18:28:00-00:00...storm...227DEG...34KT...35.93,-94.53"
+                    ],
+                    "maxWindGust": [
+                        "Up to 30 MPH"
+                    ],
+                    "maxHailSize": [
+                        "0.88"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "EAS-ORG": [
+                        "WXR"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6edaa7e342e33107175fc7883659ceebb893b31b.001.1",
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6edaa7e342e33107175fc7883659ceebb893b31b.001.1",
+                "@type": "wx:Alert",
+                "id": "urn:oid:2.49.0.1.840.0.6edaa7e342e33107175fc7883659ceebb893b31b.001.1",
+                "areaDesc": "Cimarron",
+                "geocode": {
+                    "SAME": [
+                        "040025"
+                    ],
+                    "UGC": [
+                        "OKZ001"
+                    ]
+                },
+                "affectedZones": [
+                    "https://api.weather.gov/zones/forecast/OKZ001"
+                ],
+                "references": [
+                    {
+                        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7445af3205f7d75b592088c77148e13c2bd17b17.001.1",
+                        "identifier": "urn:oid:2.49.0.1.840.0.7445af3205f7d75b592088c77148e13c2bd17b17.001.1",
+                        "sender": "w-nws.webmaster@noaa.gov",
+                        "sent": "2025-05-18T02:37:00-05:00"
+                    }
+                ],
+                "sent": "2025-05-18T10:24:00-05:00",
+                "effective": "2025-05-18T10:24:00-05:00",
+                "onset": "2025-05-18T13:00:00-05:00",
+                "expires": "2025-05-18T20:00:00-05:00",
+                "ends": "2025-05-18T20:00:00-05:00",
+                "status": "Actual",
+                "messageType": "Update",
+                "category": "Met",
+                "severity": "Moderate",
+                "certainty": "Likely",
+                "urgency": "Expected",
+                "event": "Wind Advisory",
+                "sender": "w-nws.webmaster@noaa.gov",
+                "senderName": "NWS Amarillo TX",
+                "headline": "Wind Advisory issued May 18 at 10:24AM CDT until May 18 at 8:00PM CDT by NWS Amarillo TX",
+                "description": "* WHAT...Southwest winds 30 to 39 mph with gusts up to 50 mph\nexpected.\n\n* WHERE...Cimarron County.\n\n* WHEN...Until 8 PM CDT this evening.\n\n* IMPACTS...Gusty winds will blow around unsecured objects. Tree\nlimbs could be blown down and a few power outages may result.",
+                "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.",
+                "response": "Execute",
+                "parameters": {
+                    "AWIPSidentifier": [
+                        "NPWAMA"
+                    ],
+                    "WMOidentifier": [
+                        "WWUS74 KAMA 181524"
+                    ],
+                    "NWSheadline": [
+                        "WIND ADVISORY REMAINS IN EFFECT UNTIL 8 PM CDT THIS EVENING"
+                    ],
+                    "BLOCKCHANNEL": [
+                        "EAS",
+                        "NWEM",
+                        "CMAS"
+                    ],
+                    "VTEC": [
+                        "/O.CON.KAMA.WI.Y.0009.250518T1800Z-250519T0100Z/"
+                    ],
+                    "eventEndingTime": [
+                        "2025-05-19T01:00:00+00:00"
+                    ]
+                }
+            }
+        }
+    ],
+    "title": "Current watches, warnings, and advisories for Oklahoma",
+    "updated": "2025-05-18T18:35:23+00:00"
+}
