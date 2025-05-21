@@ -12,23 +12,20 @@ of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Publ
 You should have received a copy of the GNU General Public License along with hybrid-weather-radio. If not, see <https://www.gnu.org/licenses/>. 
 */
 
-#include <iostream>
-#include <fstream>
+#include <iostream> // for cout, etc
+#include <fstream> // for config (and future other file) IO
 #include <string>
-#include "libraries/nlohmann/json.hpp"
+#include "libraries/nlohmann/json.hpp" // for parsing config files and JSON data returned from api.weather.gov
 #include <chrono> // for date & time
 #include <thread> // for sleep
 #include "fetchAlerts.h"
-
-//using json = nlohmann::json;
-//std::string state = "OK"; // TODO: if this state isn't valid, then we will get a json back with an error saying so. Need to handle that properly
 
 int main(void)
 {    
     std::ifstream config_file("config.json");
     nlohmann::json config = nlohmann::json::parse(config_file);
     config_file.close();
-    std::string state = config["state"].template get<std::string>();
+    std::string state = config["state"].template get<std::string>(); // TODO: if this state isn't valid, then we will get a json back with an error saying so. Need to handle that properly
 
     std::string alerts = fetchAlerts(state);
     if(alerts.size() > 0)

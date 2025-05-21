@@ -1,6 +1,12 @@
 *alerts.json
 hybrid_weather_radio
 
+.codelite
+hybrid_weather_radio.mk
+hybrid_weather_radio.txt
+compile_commands.json
+Makefile
+
 # Prerequisites
 *.d
 
