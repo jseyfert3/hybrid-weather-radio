@@ -39,7 +39,7 @@ int main(void)
 	}
 	else
 	{
-		alerts = nlohmann::json::parse(fetchAlerts(state)); //TODO: will those error parsing if doesn't fetch results
+		alerts = nlohmann::json::parse(fetchAlerts(state)); //TODO: will throw error parsing if doesn't fetch results
 		std::cout << "Fetched alerts for state of " << state << "\n";
 	}
 	
@@ -63,6 +63,26 @@ int main(void)
 	{
 		std::cout << "Alert #" << i << ":\n";
 		std::cout << "    " << alerts["features"][i]["properties"]["event"] << "\n";
+		std::cout << "    ID: " << alerts["features"][i]["id"].template get<std::string>() << "\n";
+		std::cout << "    Sent:      " << alerts["features"][i]["properties"]["sent"].template get<std::string>() << "\n";
+		std::cout << "    Effective: " << alerts["features"][i]["properties"]["effective"].template get<std::string>() << "\n";
+		if(!alerts["features"][i]["properties"]["onset"].is_null())
+		{
+			std::cout << "    Onset:     " << alerts["features"][i]["properties"]["onset"].template get<std::string>() << "\n";
+		}
+		else
+		{
+			std::cout << "    Onset:     NULL\n";
+		}
+		std::cout << "    Expires:   " << alerts["features"][i]["properties"]["expires"].template get<std::string>() << "\n";
+		if(!alerts["features"][i]["properties"]["ends"].is_null())
+		{
+			std::cout << "    Ends:      " << alerts["features"][i]["properties"]["ends"].template get<std::string>() << "\n";
+		}
+		else
+		{
+			std::cout << "    Ends:      NULL\n";
+		}
 		std::cout << "    SAME codes:\n";
 		for(long unsigned int j = 0; j < alerts["features"][i]["properties"]["geocode"]["SAME"].size(); j++)
 		{
@@ -78,6 +98,8 @@ int main(void)
 		else
 			std::cout << "No" << "\n";
 		std::cout << "\n";
+		std::cout << "    Description:\n";
+		std::cout << alerts["features"][i]["properties"]["description"].template get<std::string>() << "\n\n";
 	}
 	return 0;
 } 
